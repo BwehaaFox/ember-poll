@@ -6,6 +6,7 @@ export default EmberPollService extends Service {
   init() {
     super.init(...arguments);
     this.set('_polls', emberArray([]));
+    console.log(1);
   }
   willDestroy() {
     this.stopAll();
